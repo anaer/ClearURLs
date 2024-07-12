@@ -1,9 +1,13 @@
 {
-    "providers": {
-      "csdn": {
-        "urlPattern": "^https?:\\/\\/blog\\.csdn\\.net",
-        "rules": ["utm_v", "utm_medium", "utm_source"]
-      }
+  "providers": {
+    "mozilla.org": {
+      "urlPattern": "^https?:\\/\\/(?:[a-z0-9-]+\\.)*?mozilla\\.org",
+      "rules": ["src", "platform", "redirect_source","utm_source", "utm_medium", "utm_content"],
+      "exceptions": ["^https?:\\/\\/(?:[a-z0-9-]+\\.)*?mozilla.org\\/api"]
+    },
+    "csdn": {
+      "urlPattern": "^https?:\\/\\/blog\\.csdn\\.net",
+      "rules": ["utm_v", "utm_medium", "utm_source"]
     }
   }
-  
+}

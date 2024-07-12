@@ -1,13 +1,5 @@
 {
     "providers": {
-        "csdn": {
-            "urlPattern": "^https?:\\/\\/blog\\.csdn\\.net",
-            "rules": [
-                "utm_v",
-                "utm_medium",
-                "utm_source"
-            ]
-        },
         "amazon": {
             "urlPattern": "^https?:\\/\\/(?:[a-z0-9-]+\\.)*?amazon(?:\\.[a-z]{2,}){1,}",
             "rules": [
@@ -604,7 +596,10 @@
             "rules": [
                 "src",
                 "platform",
-                "redirect_source"
+                "redirect_source",
+                "utm_source",
+                "utm_medium",
+                "utm_content"
             ],
             "exceptions": [
                 "^https?:\\/\\/(?:[a-z0-9-]+\\.)*?mozilla.org\\/api"
@@ -1884,6 +1879,14 @@
             "urlPattern": "^https?:\\/\\/(?:[a-z0-9-]+\\.)*?pantip\\.com",
             "rawRules": [
                 "#lead.*"
+            ]
+        },
+        "csdn": {
+            "urlPattern": "^https?:\\/\\/blog\\.csdn\\.net",
+            "rules": [
+                "utm_v",
+                "utm_medium",
+                "utm_source"
             ]
         }
     }
