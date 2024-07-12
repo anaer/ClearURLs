@@ -1,0 +1,9 @@
+{
+    "providers": {
+      "csdn": {
+        "urlPattern": "^https?:\\/\\/blog\\.csdn\\.net",
+        "rules": ["utm_v", "utm_medium", "utm_source"]
+      }
+    }
+  }
+  
